@@ -1,15 +1,18 @@
 <html>
 <head>
-    <title>Item Details</title>
+    <title>Режим VPN</title>
     <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
 </head>
 <body>
     <h1>Выбери режим</h1>
 <form method="post">
-    <input type="submit" name="action" value="Зал Youtube" >
-    <input type="submit" name="action" value="Зал Кинопоиск">
-    <input type="submit" name="action" value="Кухня Youtube">
-    <input type="submit" name="action" value="Кухня Кинопоиск">
+    <div class="main">
+        <input class="button-one" type="submit" name="action" value="Зал Youtube" >
+        <input class="button-one" type="submit" name="action" value="Зал Кинопоиск">
+        <input class="button-one" type="submit" name="action" value="Кухня Youtube">
+        <input class="button-one" type="submit" name="action" value="Кухня Кинопоиск">
+    </div>
+
 </form>
 <p>Result:{{ result }}</p>
 </body>
